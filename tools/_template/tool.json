@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "id": "replace-with-tool-id",
+  "name": "Replace with tool name",
+  "sideEffect": "read_only",
+  "auth": "user_scoped",
+  "approval": "not_required",
+  "description": "Describe one deterministic capability without business judgment."
+}

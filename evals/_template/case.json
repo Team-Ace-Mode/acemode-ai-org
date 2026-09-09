@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "replace-with-skill-id/case-name",
+  "skillId": "replace-with-skill-id",
+  "skillVersion": "0.1.0",
+  "contextSnapshot": [],
+  "input": {},
+  "assertions": [
+    "Produces the required deliverable"
+  ],
+  "forbidden": [
+    "Invents missing facts",
+    "Performs an unapproved external action"
+  ],
+  "humanRubric": {
+    "role": "domain-approver-role",
+    "dimensions": [
+      "accuracy",
+      "usefulness"
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "id": "org.identity",
+      "path": "context/organization/identity.md",
+      "owner": "ai-transformation-lead",
+      "status": "active",
+      "source": "wechat-summary-2026-09-09:friend-group-2026-01-10",
+      "verifiedAt": "2026-09-09",
+      "reviewAfter": "2026-12-09",
+      "sensitivity": "internal"
+    },
+    {
+      "id": "org.mission",
+      "path": "context/organization/mission.md",
+      "owner": "ai-transformation-lead",
+      "status": "active",
+      "source": "wechat-summary-2026-09-09:dev-team-2026-08-27",
+      "verifiedAt": "2026-09-09",
+      "reviewAfter": "2026-12-09",
+      "sensitivity": "internal"
+    },
+    {
+      "id": "org.team-map",
+      "path": "context/organization/team-map.md",
+      "owner": "ai-transformation-lead",
+      "status": "active",
+      "source": "wechat-summary-2026-09-09:dev-team",
+      "verifiedAt": "2026-09-09",
+      "reviewAfter": "2026-10-09",
+      "sensitivity": "internal"
+    },
+    {
+      "id": "transformation.ai-native-charter",
+      "path": "context/transformation/ai-native-charter.md",
+      "owner": "ai-transformation-lead",
+      "status": "active",
+      "source": "wechat-summary-2026-09-09:dev-team-2026-08-27",
+      "verifiedAt": "2026-09-09",
+      "reviewAfter": "2026-12-09",
+      "sensitivity": "internal"
+    },
+    {
+      "id": "transformation.current-portfolio",
+      "path": "context/transformation/current-portfolio.md",
+      "owner": "ai-transformation-lead",
+      "status": "active",
+      "source": "wechat-summary-2026-09-09:dev-team-2026-09",
+      "verifiedAt": "2026-09-09",
+      "reviewAfter": "2026-10-01",
+      "sensitivity": "internal"
+    },
+    {
+      "id": "brand.voice",
+      "path": "context/brand/voice.md",
+      "owner": "content-team",
+      "status": "draft",
+      "source": "wechat-summary-2026-09-09:observed-content",
+      "verifiedAt": "2026-09-09",
+      "reviewAfter": "2026-09-30",
+      "sensitivity": "internal"
+    },
+    {
+      "id": "pilot.livestream-promotion",
+      "path": "context/operations/pilot-livestream-promotion.md",
+      "owner": "livestream-team",
+      "status": "archived",
+      "source": "ai-transformation-kickoff",
+      "verifiedAt": "2026-09-09",
+      "reviewAfter": "2026-12-09",
+      "sensitivity": "internal"
+    },
+    {
+      "id": "source.wechat-summary-2026-09-09",
+      "path": "context/sources/wechat-summary-2026-09-09.md",
+      "owner": "ai-transformation-lead",
+      "status": "draft",
+      "source": "user-provided-wechat-cli-summary-2026-09-09",
+      "verifiedAt": "2026-09-09",
+      "reviewAfter": "2026-10-09",
+      "sensitivity": "restricted"
+    }
+  ]
+}

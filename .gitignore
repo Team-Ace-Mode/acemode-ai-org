@@ -1,0 +1,16 @@
+node_modules/
+coverage/
+dist/
+.cache/
+.DS_Store
+Thumbs.db
+
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+
+runs/local/
+.claude/settings.local.json

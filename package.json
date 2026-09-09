@@ -1,0 +1,10 @@
+{
+  "name": "acemode-ai-org",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/validate-repo.mjs",
+    "test": "node --test tests/*.test.mjs"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://acemode.example/schemas/tool.schema.json",
+  "title": "AceMode Tool Contract",
+  "type": "object",
+  "required": ["schemaVersion", "id", "name", "sideEffect", "auth", "approval"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "name": { "type": "string", "minLength": 2 },
+    "sideEffect": { "enum": ["read_only", "internal_write", "external_write", "destructive"] },
+    "auth": { "enum": ["none", "user_scoped", "service_role"] },
+    "approval": { "enum": ["not_required", "required"] },
+    "description": { "type": "string" }
+  },
+  "additionalProperties": false
+}

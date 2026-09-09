@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "replace-with-skill-id",
+  "version": "0.1.0",
+  "status": "draft",
+  "owner": "domain-team-or-role",
+  "approver": "domain-approver-role",
+  "riskLevel": "low",
+  "context": ["replace.with-context-id"],
+  "tools": [],
+  "humanGates": [],
+  "evals": []
+}

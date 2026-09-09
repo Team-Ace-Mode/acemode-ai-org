@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://acemode.example/schemas/eval-case.schema.json",
+  "title": "AceMode Skill Eval Case",
+  "type": "object",
+  "required": ["schemaVersion", "id", "skillId", "input", "assertions"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "id": { "type": "string" },
+    "skillId": { "type": "string" },
+    "skillVersion": { "type": "string" },
+    "contextSnapshot": { "type": "array" },
+    "input": { "type": "object" },
+    "assertions": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "forbidden": { "type": "array", "items": { "type": "string" } },
+    "humanRubric": { "type": "object" }
+  },
+  "additionalProperties": false
+}

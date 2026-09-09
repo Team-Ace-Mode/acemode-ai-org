@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "replace-with-workflow-id",
+  "version": "0.1.0",
+  "status": "draft",
+  "owner": "business-owner-role",
+  "triggers": [
+    {
+      "type": "manual",
+      "source": "team-member"
+    }
+  ],
+  "inputs": [],
+  "steps": [
+    {
+      "id": "collect-input",
+      "type": "manual",
+      "ref": null,
+      "mode": "required"
+    },
+    {
+      "id": "run-skill",
+      "type": "skill",
+      "ref": "replace-with-skill-id",
+      "mode": "draft"
+    },
+    {
+      "id": "approve",
+      "type": "human_gate",
+      "ref": "domain-approver-role",
+      "mode": "required"
+    }
+  ],
+  "outputs": [],
+  "failurePolicy": {
+    "retries": 0,
+    "onUnknown": "pause_for_human",
+    "onRejected": "stop"
+  }
+}

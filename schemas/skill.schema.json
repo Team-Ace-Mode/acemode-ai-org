@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://acemode.example/schemas/skill.schema.json",
+  "title": "AceMode Skill Governance Metadata",
+  "type": "object",
+  "required": ["schemaVersion", "id", "version", "status", "owner", "approver", "riskLevel", "context", "tools", "humanGates", "evals"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "status": { "enum": ["draft", "pilot", "active", "deprecated"] },
+    "owner": { "type": "string", "minLength": 2 },
+    "approver": { "type": "string", "minLength": 2 },
+    "riskLevel": { "enum": ["low", "medium", "high"] },
+    "context": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "tools": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "humanGates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["before", "required", "role"],
+        "properties": {
+          "before": { "type": "string" },
+          "required": { "type": "boolean" },
+          "role": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "evals": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+  },
+  "additionalProperties": false
+}
